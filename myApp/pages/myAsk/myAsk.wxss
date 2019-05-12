@@ -1,0 +1,105 @@
+/* pages/myAsk/myAsk.wxss */
+.questionCard{
+  background:whitesmoke;
+  width:95%;
+  margin:0 auto;
+  /* border:1px solid black; */
+  border-top:12rpx solid rgba(0, 128, 0, 0.863);
+  margin-bottom:20rpx;
+  padding:10rpx;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  /* text-align: center; */
+}
+.qTitle{
+  font-family: Georgia;
+  margin:0 5rpx;
+  font-size:32rpx;
+  font-style: oblique;
+  font-weight:600;
+}
+.qTitle image{
+  font-family:serif;
+  width:40rpx;
+  height:40rpx;
+  border-radius:50%;
+}
+.qTitle van-icon{
+  float:right;
+}
+.msg{
+  width:100%;
+  color:#404040;
+}
+.time{
+  font-size:28rpx;
+  float:left;
+  font-style:oblique;
+}
+.views{
+  margin-left:15rpx;
+  font-size:28rpx;
+  float:left;
+}
+.msg:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.qContent{
+  margin:0 5rpx;
+  font-size:28rpx;
+  color:#404040;
+  word-break:break-all;
+  word-wrap:break-word;
+}
+.noAsk{
+  width:100%;
+  text-align: center;
+  margin-top:400rpx;
+  color:#404040de;
+}
+.boxTop{
+  height:300rpx;
+  background-size:cover;
+  margin-bottom:10rpx;
+}
+.headPic{
+  height:200rpx;
+  /* overflow:hidden; */
+}
+.headPic image{
+  width:150rpx;
+  height:150rpx;
+  margin-top:50rpx;
+  margin-left:300rpx;
+  border:5rpx solid white;
+  border-radius:40rpx;
+}
+.nickname{
+  height:50rpx;
+  text-align:center;
+  line-height:50rpx;
+  font-size:32rpx;
+  color:white;
+}
+.boxBottom{
+  height:50rpx;
+  line-height:50rpx;
+  color:white;
+  font-size:28rpx;
+}
+.myAskLength{
+  width:48%;
+  text-align:right;
+  float:left;
+}
+.toPublish{
+  width:48%;
+  text-align:left;
+  float:right;
+}
+.boxBottom:after{
+  content:'';
+  display:block;
+  clear:both;
+}

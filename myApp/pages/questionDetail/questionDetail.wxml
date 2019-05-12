@@ -1,0 +1,80 @@
+<view class='question-box'>
+  <view class='msg'>
+    <view class='left-box'>
+      <view class='pichead'><image src='{{picheadurl}}'></image></view>
+    </view>
+    <view class='right-box'>
+      <view class='rightbox-top'>
+        <view class='title'>{{title}}</view>
+      </view>
+      <view class='rightbox-bottom'>
+        <view class='nickname'>{{nickname}}</view>
+        <view class='time'>{{time}}</view>
+        <view class='views'>{{views}}<van-icon name="eye-o" size='24rpx'/></view>
+      </view>
+    </view>
+  </view>
+  <view class='content'>
+    <view>{{content}}</view>
+  </view>
+</view>
+<view class='publishComment'>
+  <van-cell-group>
+    <van-field
+      value="{{ commentContent }}"
+      center
+      clearable
+      type='textarea'
+      autosize
+      label="评论"
+      placeholder="{{placeholder1}}"
+      border="{{ false }}"
+      use-button-slot
+      maxlength='200'
+      title-width='90rpx'
+      fixed='true'
+      bind:focus='focusInput'
+      bind:blur='blurInput'
+      bind:input='getComment'
+    >
+      <van-button slot="button" size="small" type="primary" bind:click='publishComment'>发表评论</van-button>
+    </van-field>
+</van-cell-group>
+</view>
+
+<view class='commentTop'>
+  <van-swipe-cell right-width="{{ 65 }}" >
+    <!-- <view slot="left">选择</view> -->
+    <van-cell-group>
+      <van-cell title="最新评论" value="{{shoucang}}" />
+    </van-cell-group>
+    <view slot="right"><van-tag type="danger" bindtap='addMyFavour'>{{addorno}}</van-tag></view>
+  </van-swipe-cell>
+</view>
+
+<view hidden='{{noComment}}' class='noComment'>暂时没有评论  ┑(￣Д ￣)┍</view>
+
+<view class='commentbox'>
+  <view class='comment'>
+    <block wx:for='{{comment}}' wx:key='{{item._id}}'>
+      <view class='box'>
+        <view class='boxLeft'>
+          <image src="{{item.avatarUrl}}"></image>
+        </view>
+        <view class='boxRight'>
+          <view class='boxRightTop'>
+            <view class='time1'>{{item.commentTime}}</view>
+            <view class='light' bindtap='light' data-id="{{item._id}}"><van-icon name="fire" color='red' />{{item.light}}</view>
+          </view>
+          <view class="name">{{item.nickName}}</view>
+          <view class='boxRightBottom'>
+            <view class='commentcontent'>{{item.commentContent}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<van-popup show="{{ show }}" bind:close="onClose"   custom-style="background:#ff976a;text-align:center;" position='top'>还没有输入评论内容哦</van-popup>
+<toast hidden ="{{psuccess}}">发表成功</toast>

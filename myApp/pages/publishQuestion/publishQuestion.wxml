@@ -1,0 +1,32 @@
+<van-notice-bar
+  scrollable="false"
+  text="向大家提一个问题吧！"
+/>
+<van-cell-group>
+  <van-field
+    value="{{ qtitle }}"
+    required
+    clearable
+    label="标题"
+    placeholder="请输入标题"
+    bind:click-icon="onClickIcon"
+    maxlength='50'
+    bind:input='getTitle'
+  />
+
+  <van-field
+    value="{{ qdetail }}"
+    label="问题描述"
+    type="textarea"
+    clearable
+    placeholder="请输入问题描述，限两百字"
+    autosize
+    maxlength='150'
+    bind:input='getQDetail'
+  />
+</van-cell-group>
+<view class='publish-btn'>
+  <van-button size='large' type='primary' bind:click='publishQuestion'>发布问题</van-button>
+</view>
+<van-popup show="{{ show }}" bind:close="onClose"   custom-style="background:#ff976a;text-align:center;" position='top'>必须输入标题！</van-popup>
+<toast hidden ="{{psuccess}}">发表成功</toast>

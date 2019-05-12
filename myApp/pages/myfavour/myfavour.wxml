@@ -1,0 +1,27 @@
+<view class='box'>
+  <view  style="background-image: url('../../image/bg4.jpg');" class='boxTop'>
+    <view class='headPic'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='nickname'>
+      {{userInfo.nickName}}
+    </view>
+    <view class='boxBottom'>
+      <view class='myFavourLength'>{{myFavourLength}}个收藏<van-icon name='bookmark'></van-icon></view>
+      <view class='toPublish' bindtap='toPublish'>去提个问题<van-icon name='edit'></van-icon></view>
+    </view>   
+  </view>
+  <block wx:for='{{myFavour}}' wx:key="{{item.ID}}">
+    <view class='myFavourCard' bindtap='goDetail' data-id='{{item._id}}'>
+      <view class='title'>{{item.questionTitle}}</view>
+      <view class='msg'>
+        <view class='pic'><image src='{{item.avatarUrl}}'></image></view>
+        <view class='name'>{{item.nickName}}</view>
+        <view class='views'>{{item.views}}<van-icon name='eye'></van-icon></view>
+      </view>
+      <view class='time'>{{item.time}}</view>
+      <view class='content'>{{item.questionContent}}</view>
+    </view>
+  </block>
+</view>
+<view class='noFavour' hidden='{{show}}'>你还没有收藏问题  ┑(￣Д ￣)┍</view>

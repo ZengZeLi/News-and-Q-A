@@ -1,0 +1,35 @@
+<view class='myBox'>
+  <view class='myBoxTop' style="background-image: url('../../image/bg7.jpg');">
+    <view class='headPic'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='nickname'>
+      {{userInfo.nickName}}
+    </view>
+  </view>
+  <view class='myBoxBottom'>
+    <van-cell-group>
+      <van-cell
+        title="我的收藏"
+        is-link
+        icon="star-o"
+        url="../myfavour/myfavour"
+        size='large'
+      />
+      <van-cell
+        title='我提出的问题'
+        is-link
+        icon='question-o'
+        url='../myAsk/myAsk'
+        size='large'
+      />
+      <van-cell
+        title='关于'
+        is-link
+        icon='more-o'
+        size='large'
+        url='../about/about'
+      />
+    </van-cell-group>
+  </view>
+</view>

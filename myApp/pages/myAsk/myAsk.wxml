@@ -1,0 +1,25 @@
+<view class='box'>
+  <view  style="background-image: url('../../image/bg8.jpg');" class='boxTop'>
+    <view class='headPic'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='nickname'>
+      {{userInfo.nickName}}
+    </view>
+    <view class='boxBottom'>
+      <view class='myAskLength'>{{myAskLength}}个提问<van-icon name='completed'></van-icon></view>
+      <view class='toPublish' bindtap='toPublish'>去提个问题<van-icon name='edit'></van-icon></view>
+    </view>   
+  </view>
+  <block wx:for="{{myAsk}}" wx:key='{{item.ID}}'>
+    <view class='questionCard' data-id="{{item._id}}" bindtap='goDetail' >
+      <view class='qTitle'>{{item.questionTitle}}</view>
+      <view class='msg'>
+        <view class='time'>{{item.time}}</view>
+        <view class='views'>{{item.views}}<van-icon name='eye'></van-icon></view>
+      </view>
+      <view class='qContent'>{{item.questionContent}}</view>
+    </view>
+  </block>
+</view>
+<view class='noAsk' hidden='{{show}}'>你还没有发表问题  ┑(￣Д ￣)┍</view>

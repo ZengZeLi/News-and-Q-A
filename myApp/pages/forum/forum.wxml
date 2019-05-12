@@ -1,0 +1,21 @@
+<view class='box'>
+  <block wx:for='{{apiData}}' wx:key='{{item.ID}}'>
+    <view class='questionCard' data-id='{{item._id}}' bindtap='goDetail'>
+      <view class='cardLeft'>
+        <image src='{{item.avatarUrl}}'></image>
+      </view>
+      <view class='cardRight'>
+        <view class='title'>{{item.questionTitle}}</view>
+        <view class='msg'>
+          <view class='author'>作者：{{item.nickName}}</view>
+          <view class='time'>{{item.time}}</view>
+          <view class='views'>{{item.views}}<van-icon name='eye'></van-icon></view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class='edit' bindtap='goAsk'>
+  <van-icon name='edit' size='60rpx' color='red' custom-style='margin-left:30rpx;margin-top:30rpx;'></van-icon>
+</view>

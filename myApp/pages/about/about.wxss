@@ -1,0 +1,8 @@
+/* pages/about/about.wxss */
+.contact{
+  margin-top:500rpx;
+  text-align: center;
+}
+.email{
+  text-align: center;
+}

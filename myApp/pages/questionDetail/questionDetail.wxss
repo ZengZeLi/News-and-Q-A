@@ -1,0 +1,186 @@
+/* pages/questionDetail/questionDetail.wxss */
+.question-box{
+  /* background:whitesmoke; */
+}
+.question-box:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.msg{
+  width:100%;
+  height:150rpx;
+  padding:6rpx;
+  /* border-bottom:1px solid #aaaaaa; */
+}
+/*.msg:after{*/
+  /*content:'';*/
+  /*clear:both;*/
+  /*display:block;*/
+/*}*/
+.content{
+  width:98%;
+  float:left;
+  font-size:28rpx;
+  color:#505050;
+  /* margin:10rpx; */
+  margin-right:10rpx;
+  padding:10rpx;
+  border-bottom:1px dotted #aaaaaa;
+  /* background:whitesmoke; */
+   word-break:break-all;
+}
+/*.content:after{*/
+  /*content:'';*/
+  /*display:block;*/
+  /*clear:both;*/
+/*}*/
+.left-box{
+  float:left;
+  /* margin:5rpx; */
+}
+.pichead image{
+  width:150rpx;
+  height:150rpx;
+}
+.right-box{
+  width:590rpx;
+  float:right;
+  margin-right:5rpx;
+}
+.rightbox-top{
+  height:120rpx;
+}
+.title{
+  font-size:32rpx;
+  color:#404040;
+}
+.rightbox-bottom{
+  height:30rpx;
+  margin-top:5rpx;
+  /* margin-bottom:5rpx; */
+}
+.nickname{
+  float:left;
+  font-size:25rpx;
+  color:#a8a8a8;
+}
+.time{
+  float:left;
+  margin-left:20rpx;
+  font-size:23rpx;
+  color:#a8a8a8;
+}
+.views{
+  float:left;
+  margin-left:20rpx;
+  font-size:20rpx;
+  font-style:oblique;
+  color:#a8a8a8;
+}
+.views van-icon{
+  font-size:24rpx;
+}
+.right-box:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.publishComment{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  z-index:100;
+}
+.commentbox{
+  margin-bottom:100rpx;
+}
+.noComment{
+  width:100%;
+  text-align: center;
+  margin-top:400rpx;
+  color:#404040de;
+}
+.box{
+  width:750rpx;
+  margin-top:5rpx;
+  margin-bottom:10rpx;
+  /* background:whitesmoke; */
+  border-radius:15rpx;
+  /*height:150rpx;*/
+  /*overflow:hidden;*/
+}
+.box:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.boxLeft{
+  width:100rpx;
+  /*height:150rpx;*/
+  /*overflow:hidden;*/
+  float:left;
+}
+.boxLeft image{
+  width:90rpx;
+  height:90rpx;
+  margin:10rpx;
+  border-radius:10rpx;
+  border:1px solid white;
+}
+.boxRight{
+  width:650rpx;
+  /*height:150rpx;*/
+  /*overflow:hidden;*/
+  float:left;
+}
+.boxRight:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.boxRightTop{
+  width:650rpx;
+  height:35rpx;
+}
+.boxRightTop:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.name{
+  width:650rpx;
+  height:35rpx;
+  font-size:23rpx;
+  font-style:oblique;
+  color:#404040;
+}
+.boxRightBottom{
+  width:650rpx;
+  padding:5rpx;
+  /*height:80rpx;*/
+}
+.time1{
+  float:left;
+  width:530rpx;
+  margin-left:5rpx;
+  font-size:24rpx;
+  color:#404040;
+}
+.light{
+  width:100rpx;
+  float:right;
+  padding-right:10rpx;
+  font-size:24rpx;
+  color:#404040;
+  text-align:right;
+}
+.commentcontent{
+  width:650rpx;
+  font-size:30rpx;
+}
+.boxRight:after{
+  content:"";
+  display:block;
+  clear:both;
+}

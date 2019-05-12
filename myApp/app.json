@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/forum/forum",
+    "pages/mine/mine",
+    "pages/myfavour/myfavour",
+    "pages/myAsk/myAsk",
+    "pages/about/about",
+    "pages/newsDetail/newsDetail",
+    "pages/questionDetail/questionDetail",
+    "pages/publishQuestion/publishQuestion"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "dude~",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eee"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/newsicon.png",
+        "selectedIconPath": "image/newsicon1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/forum/forum",
+        "iconPath": "image/forum.png",
+        "selectedIconPath": "image/forum1.png",
+        "text": "论坛"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "image/me.png",
+        "selectedIconPath": "image/me1.png",
+        "text": "我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

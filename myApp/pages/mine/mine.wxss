@@ -1,0 +1,22 @@
+.myBoxTop{
+  height:300rpx;
+  background-size:cover;
+}
+.headPic{
+  height:200rpx;
+  /* overflow:hidden; */
+}
+.headPic image{
+  width:150rpx;
+  height:150rpx;
+  margin-top:50rpx;
+  margin-left:300rpx;
+  border:5rpx solid white;
+  border-radius:40rpx;
+}
+.nickname{
+  height:100rpx;
+  text-align:center;
+  line-height:100rpx;
+  color:white;
+}
