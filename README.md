@@ -16,9 +16,11 @@ A WeChat MiniProgram for read news and publish a question and get answer
 ### 启动数据库
     进入 MongoDB 的 bin 目录的命令行
 >mongod --dbpath F:\database\newsMiniProgram
+
     其中 F:\database\newsMiniProgram 是数据库的根目录
     再次进入 MongoDB 的 bin 目录的命令行
 >mongo
+
     数据库启动
 ### 打开微信开发者工具
     在模拟器上可以看到小程序已经可以使用。由于采用了外部接口，所以前端文件夹的 index 下的 index.js 接口 Key 使用次数有限，只有一百次。
